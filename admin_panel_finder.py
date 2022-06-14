@@ -20,7 +20,7 @@ def main():
             res = requests.get(curl)
             if res.status_code == 200:
                 print("*" * 15)
-                print("Admin panel found ==> {}".format(curl))
+                print("\033[0;32m Admin panel found ==> {}".format(curl))
                 print("*" * 15)
             else:
                 print("\033[91m Not found ==> {} \033[0m".format(curl))
